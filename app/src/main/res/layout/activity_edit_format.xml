@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditFormatActivity"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/tvTambahCatatanMens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Catatan Mens"
+        android:textSize="28dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:paddingVertical="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Mulai Mens"
+        android:layout_below="@+id/tvTambahCatatanMens"/>
+    <EditText
+        android:id="@+id/etTanggalMulai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/BtnDatePickerMulaiMens"
+        android:layout_marginStart="20dp"
+        android:hint="tanggal mulai"
+        android:layout_below="@+id/tvTambahCatatanMens"
+        android:layout_margin="20dp"/>
+
+    <ImageButton
+        android:id="@+id/BtnDatePickerMulaiMens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/baseline_calendar_month_24"
+        android:layout_below="@+id/tvTambahCatatanMens"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Selesai Mens"
+        android:layout_below="@+id/etTanggalMulai"/>
+
+
+    <EditText
+        android:id="@+id/etTanggalSelesai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/BtnDatePickerSelesaiMens"
+        android:layout_marginStart="20dp"
+        android:hint="tanggal selesai"
+        android:layout_below="@+id/etTanggalMulai"
+        android:layout_margin="20dp"/>
+
+    <ImageButton
+        android:id="@+id/BtnDatePickerSelesaiMens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/baseline_calendar_month_24"
+        android:layout_below="@+id/etTanggalMulai"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Mandi Mens"
+        android:layout_below="@+id/etTanggalSelesai"/>
+    <EditText
+        android:id="@+id/etTanggalMandi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/BtnDatePickerMandi"
+        android:layout_marginStart="20dp"
+        android:hint="tanggal mandi"
+        android:layout_below="@+id/etTanggalSelesai"
+        android:layout_margin="20dp"/>
+
+    <ImageButton
+        android:id="@+id/BtnDatePickerMandi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/baseline_calendar_month_24"
+        android:layout_below="@+id/etTanggalSelesai"/>
+    <EditText
+        android:id="@+id/etJamMandi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/BtnTimePickerJamMandi"
+        android:layout_marginStart="20dp"
+        android:hint="jam mandi"
+        android:layout_below="@+id/etTanggalMandi"
+        android:layout_margin="20dp"/>
+
+    <ImageButton
+        android:id="@+id/BtnTimePickerJamMandi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/baseline_access_time_24"
+        android:layout_below="@+id/etTanggalMandi"/>
+    <Button
+        android:id="@+id/btnSimpanMens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:layout_below="@id/etJamMandi"
+        android:layout_marginVertical="20dp"/>
+
+
+</RelativeLayout>
+
+
+
